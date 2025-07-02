@@ -61,7 +61,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Futuristic theme colors
+				'neon-cyan': 'hsl(var(--neon-cyan))',
+				'neon-pink': 'hsl(var(--neon-pink))',
+				'neon-purple': 'hsl(var(--neon-purple))',
+				'neon-green': 'hsl(var(--neon-green))',
+				'dark-bg': 'hsl(var(--dark-bg))',
+				'dark-surface': 'hsl(var(--dark-surface))',
+				'dark-elevated': 'hsl(var(--dark-elevated))'
+			},
+			backgroundImage: {
+				'gradient-cyber': 'var(--gradient-cyber)',
+				'gradient-purple': 'var(--gradient-purple)',
+				'gradient-dark': 'var(--gradient-dark)'
+			},
+			boxShadow: {
+				'glow-cyan': 'var(--glow-cyan)',
+				'glow-pink': 'var(--glow-pink)',
+				'glow-purple': 'var(--glow-purple)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +102,69 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow-pulse': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px hsl(189 100% 50% / 0.5)'
+					},
+					'50%': {
+						boxShadow: '0 0 40px hsl(189 100% 50% / 0.8), 0 0 60px hsl(189 100% 50% / 0.4)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'matrix-rain': {
+					'0%': {
+						transform: 'translateY(-100vh)'
+					},
+					'100%': {
+						transform: 'translateY(100vh)'
+					}
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in-right': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(50px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'neon-flicker': {
+					'0%, 100%': {
+						textShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor'
+					},
+					'50%': {
+						textShadow: '0 0 2px currentColor, 0 0 5px currentColor, 0 0 8px currentColor'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'matrix-rain': 'matrix-rain 3s linear infinite',
+				'fade-in-up': 'fade-in-up 0.6s ease-out',
+				'slide-in-right': 'slide-in-right 0.6s ease-out',
+				'neon-flicker': 'neon-flicker 1.5s ease-in-out infinite'
 			}
 		}
 	},
